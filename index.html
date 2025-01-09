@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ba35e6e9952b850be1921735410a04ee {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ba35e6e9952b850be1921735410a04ee" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ba35e6e9952b850be1921735410a04ee = L.map(
+                "map_ba35e6e9952b850be1921735410a04ee",
+                {
+                    center: [37.98283112293208, -92.06304792640489],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f9882363a751e35f7bafaa3911434bb8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f9882363a751e35f7bafaa3911434bb8.addTo(map_ba35e6e9952b850be1921735410a04ee);
+        
+    
+            var feature_group_d4a2ccd4ba659071d674110fc4caa966 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_c8f9bda27e0ac3c660a519e14fc415a5 = L.polyline(
+                [[38.084424927172165, -91.80519013725194], [38.03505583493043, -92.39817434322481], [38.15324559112106, -91.76131028236335], [38.00810270312534, -91.89503927313318], [37.831562511816806, -92.31169796225282], [37.82817583196511, -92.04773325269234], [38.09013905102162, -92.15426472885464], [38.0278030240322, -92.28532101243563], [37.84508762455916, -92.03282327719], [37.84968685351157, -92.37397483479938], [37.947738992161966, -92.12205107563999]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(feature_group_d4a2ccd4ba659071d674110fc4caa966);
+        
+    
+            poly_line_c8f9bda27e0ac3c660a519e14fc415a5.bindTooltip(
+                `<div>
+                     Monthly Trajectory for Device: fc:e8:c0:9b:78:5d
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6310099670373f478d4aea0f2fe45749 = L.marker(
+                [38.084424927172165, -91.80519013725194],
+                {
+}
+            ).addTo(feature_group_d4a2ccd4ba659071d674110fc4caa966);
+        
+    
+            var icon_44b94102e3a043f9e5c636c6019c1a7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "play",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6310099670373f478d4aea0f2fe45749.setIcon(icon_44b94102e3a043f9e5c636c6019c1a7e);
+        
+    
+        var popup_bf65ebecd74e6cf5448c5df715ca64f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91c16436edf45fb533729a02a616290c = $(`<div id="html_91c16436edf45fb533729a02a616290c" style="width: 100.0%; height: 100.0%;">Start Point for Device: fc:e8:c0:9b:78:5d<br>Date: 2025-01-01<br>City: St. Louis<br>State: Missouri</div>`)[0];
+                popup_bf65ebecd74e6cf5448c5df715ca64f1.setContent(html_91c16436edf45fb533729a02a616290c);
+            
+        
+
+        marker_6310099670373f478d4aea0f2fe45749.bindPopup(popup_bf65ebecd74e6cf5448c5df715ca64f1)
+        ;
+
+        
+    
+    
+            var marker_d573d7e3218ab69cefad53fbea2f8124 = L.marker(
+                [37.947738992161966, -92.12205107563999],
+                {
+}
+            ).addTo(feature_group_d4a2ccd4ba659071d674110fc4caa966);
+        
+    
+            var icon_0a30ccd5bc45c81539599457bd470fd4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "stop",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d573d7e3218ab69cefad53fbea2f8124.setIcon(icon_0a30ccd5bc45c81539599457bd470fd4);
+        
+    
+        var popup_10d4f4e466354e4b2f51cf94c0495ae8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29833e32893707c90bb103ad0f223562 = $(`<div id="html_29833e32893707c90bb103ad0f223562" style="width: 100.0%; height: 100.0%;">End Point for Device: fc:e8:c0:9b:78:5d<br>Date: 2025-11-01<br>City: Wichita<br>State: Kansas</div>`)[0];
+                popup_10d4f4e466354e4b2f51cf94c0495ae8.setContent(html_29833e32893707c90bb103ad0f223562);
+            
+        
+
+        marker_d573d7e3218ab69cefad53fbea2f8124.bindPopup(popup_10d4f4e466354e4b2f51cf94c0495ae8)
+        ;
+
+        
+    
+    
+            var circle_marker_2ff5faebd9d1703ba598afa6e3a5940b = L.circleMarker(
+                [38.03505583493043, -92.39817434322481],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d4a2ccd4ba659071d674110fc4caa966);
+        
+    
+            circle_marker_2ff5faebd9d1703ba598afa6e3a5940b.bindTooltip(
+                `<div>
+                     Intermediate Point for Device: fc:e8:c0:9b:78:5d<br>Date: 2025-02-01<br>City: Kansas City<br>State: Missouri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a8c76d6599c4904b7e8b16cd7457dcc5 = L.circleMarker(
+                [38.15324559112106, -91.76131028236335],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d4a2ccd4ba659071d674110fc4caa966);
+        
+    
+            circle_marker_a8c76d6599c4904b7e8b16cd7457dcc5.bindTooltip(
+                `<div>
+                     Intermediate Point for Device: fc:e8:c0:9b:78:5d<br>Date: 2025-03-01<br>City: St. Louis<br>State: Missouri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_33a5771db07afc66df080531044d8c8b = L.circleMarker(
+                [38.00810270312534, -91.89503927313318],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d4a2ccd4ba659071d674110fc4caa966);
+        
+    
+            circle_marker_33a5771db07afc66df080531044d8c8b.bindTooltip(
+                `<div>
+                     Intermediate Point for Device: fc:e8:c0:9b:78:5d<br>Date: 2025-04-01<br>City: Overland Park<br>State: Kansas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dedf904336aef10876b0f16eb5ff6698 = L.circleMarker(
+                [37.831562511816806, -92.31169796225282],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d4a2ccd4ba659071d674110fc4caa966);
+        
+    
+            circle_marker_dedf904336aef10876b0f16eb5ff6698.bindTooltip(
+                `<div>
+                     Intermediate Point for Device: fc:e8:c0:9b:78:5d<br>Date: 2025-05-01<br>City: Overland Park<br>State: Kansas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8d598941405d263a6ffe3bbe084b51e8 = L.circleMarker(
+                [37.82817583196511, -92.04773325269234],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d4a2ccd4ba659071d674110fc4caa966);
+        
+    
+            circle_marker_8d598941405d263a6ffe3bbe084b51e8.bindTooltip(
+                `<div>
+                     Intermediate Point for Device: fc:e8:c0:9b:78:5d<br>Date: 2025-06-01<br>City: Lawrence<br>State: Kansas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_21293744ef9abeb93ced6edcebf848ba = L.circleMarker(
+                [38.09013905102162, -92.15426472885464],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d4a2ccd4ba659071d674110fc4caa966);
+        
+    
+            circle_marker_21293744ef9abeb93ced6edcebf848ba.bindTooltip(
+                `<div>
+                     Intermediate Point for Device: fc:e8:c0:9b:78:5d<br>Date: 2025-07-01<br>City: Hannibal<br>State: Missouri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e108bff0eae2419a5363addd1e38090d = L.circleMarker(
+                [38.0278030240322, -92.28532101243563],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d4a2ccd4ba659071d674110fc4caa966);
+        
+    
+            circle_marker_e108bff0eae2419a5363addd1e38090d.bindTooltip(
+                `<div>
+                     Intermediate Point for Device: fc:e8:c0:9b:78:5d<br>Date: 2025-08-01<br>City: Lawrence<br>State: Kansas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_89e70e10e467a22b7a43130fcaed69e6 = L.circleMarker(
+                [37.84508762455916, -92.03282327719],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d4a2ccd4ba659071d674110fc4caa966);
+        
+    
+            circle_marker_89e70e10e467a22b7a43130fcaed69e6.bindTooltip(
+                `<div>
+                     Intermediate Point for Device: fc:e8:c0:9b:78:5d<br>Date: 2025-09-01<br>City: Lawrence<br>State: Kansas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3ea08ab2481db53802505fc8e168d1e8 = L.circleMarker(
+                [37.84968685351157, -92.37397483479938],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d4a2ccd4ba659071d674110fc4caa966);
+        
+    
+            circle_marker_3ea08ab2481db53802505fc8e168d1e8.bindTooltip(
+                `<div>
+                     Intermediate Point for Device: fc:e8:c0:9b:78:5d<br>Date: 2025-10-01<br>City: Topeka<br>State: Kansas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_d4a2ccd4ba659071d674110fc4caa966.addTo(map_ba35e6e9952b850be1921735410a04ee);
+        
+    
+            var feature_group_89875d41554d891908dde6e3db64dbee = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_2ea76861a850fdce5c0c1f4323e41664 = L.polyline(
+                [[37.87860927346191, -92.10540120841578], [37.95241516041155, -92.26365997662279], [37.9480371859054, -91.84484519253897], [37.93360064363965, -91.92768949207209], [38.15003579122818, -92.13830733164076], [38.139272727488326, -92.00856339568817], [38.06653376696326, -91.86122779724569], [37.9528010709182, -92.07833720545194], [37.866430344681554, -91.87330461421982], [38.06753603396474, -91.91381330486755], [37.99686605256634, -92.17641709295988]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(feature_group_89875d41554d891908dde6e3db64dbee);
+        
+    
+            poly_line_2ea76861a850fdce5c0c1f4323e41664.bindTooltip(
+                `<div>
+                     Monthly Trajectory for Device: fc:e8:c0:9b:78:56
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4cc435bae4117eced7db834ea9ab3926 = L.marker(
+                [37.87860927346191, -92.10540120841578],
+                {
+}
+            ).addTo(feature_group_89875d41554d891908dde6e3db64dbee);
+        
+    
+            var icon_7c7d2433fb4e12624f4a7a684c6a75fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "play",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4cc435bae4117eced7db834ea9ab3926.setIcon(icon_7c7d2433fb4e12624f4a7a684c6a75fe);
+        
+    
+        var popup_8b333432bd0b3d3b4308b1970dff334d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6317cace65b088fadcf718ca23f6a0a7 = $(`<div id="html_6317cace65b088fadcf718ca23f6a0a7" style="width: 100.0%; height: 100.0%;">Start Point for Device: fc:e8:c0:9b:78:56<br>Date: 2025-01-01<br>City: Overland Park<br>State: Kansas</div>`)[0];
+                popup_8b333432bd0b3d3b4308b1970dff334d.setContent(html_6317cace65b088fadcf718ca23f6a0a7);
+            
+        
+
+        marker_4cc435bae4117eced7db834ea9ab3926.bindPopup(popup_8b333432bd0b3d3b4308b1970dff334d)
+        ;
+
+        
+    
+    
+            var marker_3ab108a92739d45de5bcadd6322642a8 = L.marker(
+                [37.99686605256634, -92.17641709295988],
+                {
+}
+            ).addTo(feature_group_89875d41554d891908dde6e3db64dbee);
+        
+    
+            var icon_71bd78e7842c1a6f8e87714204475fc8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "stop",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3ab108a92739d45de5bcadd6322642a8.setIcon(icon_71bd78e7842c1a6f8e87714204475fc8);
+        
+    
+        var popup_49d457b46e2ac55df6f4fb5d7d931f20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84c3c0672730ae29a13b29b75d82a662 = $(`<div id="html_84c3c0672730ae29a13b29b75d82a662" style="width: 100.0%; height: 100.0%;">End Point for Device: fc:e8:c0:9b:78:56<br>Date: 2025-11-01<br>City: Hannibal<br>State: Missouri</div>`)[0];
+                popup_49d457b46e2ac55df6f4fb5d7d931f20.setContent(html_84c3c0672730ae29a13b29b75d82a662);
+            
+        
+
+        marker_3ab108a92739d45de5bcadd6322642a8.bindPopup(popup_49d457b46e2ac55df6f4fb5d7d931f20)
+        ;
+
+        
+    
+    
+            var circle_marker_610560c6671f5bdc0324415f37e4a0ea = L.circleMarker(
+                [37.95241516041155, -92.26365997662279],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_89875d41554d891908dde6e3db64dbee);
+        
+    
+            circle_marker_610560c6671f5bdc0324415f37e4a0ea.bindTooltip(
+                `<div>
+                     Intermediate Point for Device: fc:e8:c0:9b:78:56<br>Date: 2025-02-01<br>City: Lawrence<br>State: Kansas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_992cc50d8956bfa0cd69abfcdd85982c = L.circleMarker(
+                [37.9480371859054, -91.84484519253897],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_89875d41554d891908dde6e3db64dbee);
+        
+    
+            circle_marker_992cc50d8956bfa0cd69abfcdd85982c.bindTooltip(
+                `<div>
+                     Intermediate Point for Device: fc:e8:c0:9b:78:56<br>Date: 2025-03-01<br>City: Overland Park<br>State: Kansas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_677f3a66c42159d90f1c4302be87de7c = L.circleMarker(
+                [37.93360064363965, -91.92768949207209],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_89875d41554d891908dde6e3db64dbee);
+        
+    
+            circle_marker_677f3a66c42159d90f1c4302be87de7c.bindTooltip(
+                `<div>
+                     Intermediate Point for Device: fc:e8:c0:9b:78:56<br>Date: 2025-04-01<br>City: Topeka<br>State: Kansas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3ffe34aad50c53a551e4e1c297560816 = L.circleMarker(
+                [38.15003579122818, -92.13830733164076],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_89875d41554d891908dde6e3db64dbee);
+        
+    
+            circle_marker_3ffe34aad50c53a551e4e1c297560816.bindTooltip(
+                `<div>
+                     Intermediate Point for Device: fc:e8:c0:9b:78:56<br>Date: 2025-05-01<br>City: Overland Park<br>State: Kansas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_93ca33bee9cc3102e1d6ddc98f2ad609 = L.circleMarker(
+                [38.139272727488326, -92.00856339568817],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_89875d41554d891908dde6e3db64dbee);
+        
+    
+            circle_marker_93ca33bee9cc3102e1d6ddc98f2ad609.bindTooltip(
+                `<div>
+                     Intermediate Point for Device: fc:e8:c0:9b:78:56<br>Date: 2025-06-01<br>City: Topeka<br>State: Kansas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b31bfe2b9308c5fc5032affe1efdf221 = L.circleMarker(
+                [38.06653376696326, -91.86122779724569],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_89875d41554d891908dde6e3db64dbee);
+        
+    
+            circle_marker_b31bfe2b9308c5fc5032affe1efdf221.bindTooltip(
+                `<div>
+                     Intermediate Point for Device: fc:e8:c0:9b:78:56<br>Date: 2025-07-01<br>City: Overland Park<br>State: Kansas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd56add5568052574983152ddd4d1c34 = L.circleMarker(
+                [37.9528010709182, -92.07833720545194],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_89875d41554d891908dde6e3db64dbee);
+        
+    
+            circle_marker_bd56add5568052574983152ddd4d1c34.bindTooltip(
+                `<div>
+                     Intermediate Point for Device: fc:e8:c0:9b:78:56<br>Date: 2025-08-01<br>City: Springfield<br>State: Missouri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_69867ec021b8ac14dac225d5bae3f064 = L.circleMarker(
+                [37.866430344681554, -91.87330461421982],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_89875d41554d891908dde6e3db64dbee);
+        
+    
+            circle_marker_69867ec021b8ac14dac225d5bae3f064.bindTooltip(
+                `<div>
+                     Intermediate Point for Device: fc:e8:c0:9b:78:56<br>Date: 2025-09-01<br>City: St. Louis<br>State: Missouri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fb5d99fe004830c0200ee7e28781fb45 = L.circleMarker(
+                [38.06753603396474, -91.91381330486755],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_89875d41554d891908dde6e3db64dbee);
+        
+    
+            circle_marker_fb5d99fe004830c0200ee7e28781fb45.bindTooltip(
+                `<div>
+                     Intermediate Point for Device: fc:e8:c0:9b:78:56<br>Date: 2025-10-01<br>City: Lawrence<br>State: Kansas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_89875d41554d891908dde6e3db64dbee.addTo(map_ba35e6e9952b850be1921735410a04ee);
+        
+    
+            var layer_control_52e7a1bad2715c971d38711fd60e6691_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f9882363a751e35f7bafaa3911434bb8,
+                },
+                overlays :  {
+                    "Device: fc:e8:c0:9b:78:5d" : feature_group_d4a2ccd4ba659071d674110fc4caa966,
+                    "Device: fc:e8:c0:9b:78:56" : feature_group_89875d41554d891908dde6e3db64dbee,
+                },
+            };
+            let layer_control_52e7a1bad2715c971d38711fd60e6691 = L.control.layers(
+                layer_control_52e7a1bad2715c971d38711fd60e6691_layers.base_layers,
+                layer_control_52e7a1bad2715c971d38711fd60e6691_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_ba35e6e9952b850be1921735410a04ee);
+
+        
+</script>
+</html>
